@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Langar&display=swap");
+
+:root {
+  font-family: "Langar", cursive;
+}
+li:hover {
+  background-color: aquamarine;
+}
+
+li {
+  color: "black";
+}
+.names {
+  color: black;
+}
+/* ul li::marker {
+  color: red;
+  font-size: 1.5em;
+} */
+li.clicked {
+  background-color: rgb(19, 2, 2);
+}

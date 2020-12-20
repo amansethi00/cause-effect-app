@@ -20,15 +20,24 @@ console.log(names.length);
 
     names.map((item,index)=>
         item.addEventListener("click",function(){
-            var toDisplay ={
-            name: people[index].name,
-            street: people[index].street,
-            city:people[index].city,
-            state: people[index].state,
-            telephone:people[index].telephone,
+            var toDisplay =[
+             people[index].name,
+             people[index].street,
+            people[index].city,
+             people[index].state,
+            people[index].telephone,
+            ]
+            // console.log(item.color);
+            // item.id.style.color="blue";
+            names[index].style.color= "blue";
+            
+            para=document.querySelector('p');
+            var s="";
+            for(var i=0;i<toDisplay.length;i++){
+                s+="  "+toDisplay[i];
             }
-            para=document.createElement('div');
-            para.innerText=toDisplay.name;
+            para.innerText=s;
+            
             summary.appendChild(para);
         })
     )
