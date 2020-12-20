@@ -14,9 +14,9 @@ const names = Array.from(document.querySelectorAll('.names'));
 names.map((item,index)=>{
     item.innerHTML=people[index].name;
 });
-console.log(people.map(item=>item.name.includes("Ramlal")))
-console.log(names[0].innerText);
-console.log(names.length);
+// console.log(people.map(item=>item.name.includes("Ramlal")))
+// console.log(names[0].innerText);
+// console.log(names.length);
 
     names.map((item,index)=>
         item.addEventListener("click",function(){
@@ -29,7 +29,10 @@ console.log(names.length);
             ]
             // console.log(item.color);
             // item.id.style.color="blue";
-            names[index].style.color= "blue";
+            names.map(abc => {
+                abc.style.color= "black";
+            })
+            names[index].style.color = "blue";
             
             para=document.querySelector('p');
             var s="";

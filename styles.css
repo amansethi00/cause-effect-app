@@ -20,3 +20,14 @@ li {
 li.clicked {
   background-color: rgb(19, 2, 2);
 }
+body {
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.names ::after {
+  color: black;
+}
+.names.clicked {
+  color: black;
+}
