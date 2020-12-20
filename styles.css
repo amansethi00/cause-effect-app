@@ -2,16 +2,25 @@
 
 :root {
   font-family: "Langar", cursive;
+  background-color: #d4a373;
+  --color1: #faedcd;
+  --color2: #ee6c4d;
 }
 li:hover {
-  background-color: aquamarine;
+  background-color: var(--color1);
 }
 
 li {
   color: "black";
+  list-style: none;
 }
 .names {
-  color: black;
+  /* color: var(--color2); */
+  background-color: var(--color2);
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
 }
 /* ul li::marker {
   color: red;
@@ -30,4 +39,7 @@ body {
 }
 .names.clicked {
   color: black;
+}
+#summary {
+  font-size: large;
 }

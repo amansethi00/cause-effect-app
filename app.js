@@ -32,7 +32,7 @@ names.map((item,index)=>{
             names.map(abc => {
                 abc.style.color= "black";
             })
-            names[index].style.color = "blue";
+            names[index].style.color = "aquamarine";
             
             para=document.querySelector('p');
             var s="";
